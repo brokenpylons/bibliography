@@ -1,14 +1,39 @@
 \documentclass{article}
-\usepackage{hyperref}
 \usepackage{fontspec}
 \setmainfont{Latin Modern Roman}
-%\newfontfamily{\xyz}[Mapping=tex-ansi]{Latin Modern Roman}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks]{hyperref}
+\hypersetup{
+linkcolor=NavyBlue,
+citecolor=NavyBlue,
+filecolor=Red,
+urlcolor=Gray,
+menucolor=Red,
+runcolor=Red,
+}
 
 \usepackage[wider]{rmpage}
-\usepackage[style=reading]{biblatex}
+\usepackage[style=draft,sorting=ynt,doi=false]{biblatex}
 \addbibresource{bibliography.bib}
+
+\DeclareFieldFormat{date}{\mkbibbold{#1}}
+
+\setlength{\bibparsep}{\baselineskip}
+
+\renewbibmacro{finentry}{%
+  \finentrypunct%
+  \setunit{\par}%
+  \setlength{\parskip}{0.5\baselineskip}%
+  \begin{small}%
+    \usebibmacro{annotation}%
+  \end{small}%
+  \par%
+  \url{\thefield{file}}%
+}
 
 \begin{document}
 \nocite{*}
-\printbibliography
+\printbibliography[title=Full]
+\printbibliography[keyword=parsing,title=Parsing]
 \end{document}

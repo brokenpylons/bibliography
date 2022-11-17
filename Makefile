@@ -2,8 +2,8 @@
 
 all: bibliography.pdf
 
-%.pdf: %.tex
-	LANG= latexmk -lualatex -bibtex $<
+bibliography.pdf: bibliography.tex bibliography.bib
+	LANG= latexmk -lualatex -bibtex bibliography.tex
 
 clean:
 	latexmk -C
