@@ -1,55 +1,112 @@
 Authors
 
 @xdata{davidpager,
-  author = {David Pager},
+  author = {Pager, David},
 }
 
 @xdata{joeldenny,
-  author = {Joel E. Denny},
+  author = {Denny, Joel E.},
 }
 
 @xdata{brianmalloy,
-  author = {Brian A. Malloy},
+  author = {Malloy, Brian A.},
 }
 
 @xdata{dickgrune,
-  author = {Dick Grune},
+  author = {Grune, Dick},
 }
 
 @xdata{cerieljacobs,
-  author = {Ceriel J. H. Jacobs},
+  author = {Jacobs, Ceriel J. H.},
 }
 
 @xdata{alexanderokhotin,
-  author = {Alexander Okhotin},
+  author = {Okhotin, Alexander},
 }
 
 @xdata{mikhailbarash,
-  author = {Mikhail Barash},
+  author = {Barash, Mikhail},
 }
 
 @xdata{nilsandersdanielsson,
-  author = {Nils Anders Danielsson},
+  author = {Danielsson, Nils Anders},
 }
 
 @xdata{michaeladams,
-  author = {Michael D. Adams},
+  author = {Adams, Michael D. },
 }
 
 @xdata{bentkristensen, 
-  author = {Bent Kristensen},
+  author = {Kristensen, Bent},
 }
 
 @xdata{olemadsen, 
-  author = {Ole Madsen},
+  author = {Madsen, Ole},
 }
 
 @xdata{elizabethscott,
-  author = {Elizabeth Scott},
+  author = {Scott, Elizabeth},
 }
 
 @xdata{adrianjohnstone,
-  author= {Adrian Johnstone},
+  author = {Johnstone, Adrian},
+}
+
+@xdata{johnaycock, 
+  author = {Aycock, John},
+}
+
+@xdata{nigelhorspool, 
+  author = {Horspool, R. Nigel}
+}
+
+@xdata{eelcovisser, 
+  author = {Visser, Eelco},
+}
+
+@xdata{ericvanwyk,
+  author = {van Wyk, Eric R.},
+}
+
+@xdata{augustschwerdfeger,
+  author = {Schwerdfeger, August C.},
+}
+
+@xdata{charlesconsel,
+  editor = {Consel, Charles},
+}
+
+@xdata{julialawall,
+  editor = {Lawall, Julia},
+}
+
+@xdata{richardwexelblat,
+  editor = {Wexelblat, Richard L.},
+}
+
+@xdata{danielsalomon,
+  author = {Salomon, Daniel Joseph},
+}
+
+@xdata{gordoncormack,
+  author = {Cormack, Gordon Villy},
+}
+
+Publishers
+
+@xdata{springer-ny,
+  publisher = {Springer-Verlag},
+  address = {New York, NY, USA},
+}
+
+@xdata{acm-ny,
+  publisher = {Springer-Verlag},
+  address = {New York, NY, USA},
+}
+
+@xdata{addison-wesley,
+  publisher = {Addison-Wesley},
+  address = {Boston, MA, USA},
 }
 
 Journals
@@ -60,6 +117,32 @@ Journals
 
 @xdata{scp,
   journaltitle = {Science of Computer Programming},
+}
+
+@xdata{spe,
+  journaltitle= {Software: Practice and Experience},
+}
+
+@xdata{pls,
+  journaltitle = {ACM Transactions on Programming Languages and Systems},
+}
+
+Conferences
+
+@proceedings{gpce07,
+  title = {Proceedings of the 6th International Conference on Generative Programming and Component Engineering},
+  editor = {xdata=charlesconsel-editor and xdata=julialawall-editor},
+  year = 2007,
+  venue = {Salzburg, Austria},
+  xdata = {acm},
+}
+
+@proceedings{sigplan89,
+  title = {Proceedings of the ACM SIGPLAN 1989 Conference on Programming Language Design and Implementation},
+  editor = {xdata=richardwexelblat-editor},
+  year = 1989,
+  venue = {Portland, OR, USA},
+  xdata = {acm},
 }
 
 Papers
@@ -108,17 +191,27 @@ Papers
 }
 
 @book{parsingtechniques,
-  author = {xdata=dickgrune-author and xdata=cerieljacobs-author},
-  publisher = {Springer-Verlag New York},
-  date = {2008},
-
-  series = {Monographs in Computer Science},
-  subtitle = {A Practical Guide},
   title = {Parsing Techniques},
+  subtitle = {A Practical Guide},
+  author = {xdata=dickgrune-author and xdata=cerieljacobs-author},
+  date = 2008,
+
+  xdata = {springer-ny},
 
   keywords = {parsing},
   file = {./files/parsingtechniques.pdf},
   doi = {10.1007/978-0-387-68954-8},
+}
+
+@book{dragonbook,
+  title = {Compilers: Principles, Techniques, and Tools (2nd Edition)},
+  author = {Alfred V. Aho and Monica S. Lam and Ravi Sethi and Jeffrey D. Ullman},
+  year = 2006,
+
+  xdata = {addison-wesley},
+
+  keywords = {parsing},
+  file = {./files/dragonbook.pdf},
 }
 
 @article{conjunctive,
@@ -166,6 +259,16 @@ Papers
   doi = {10.1016/j.ic.2004.03.006},
 }
 
+@unpublished{boolean2,
+  title  = {Describing the syntax of programming languages using conjunctive and Boolean grammars},
+  author = {Okhotin, Alexander},
+  year   = 2020,
+  note   = "Unpublished paper, available at https://arxiv.org/abs/2012.03538 (visited on 2022-02-10)",
+
+  keywords = {parsing,conjunctive-boolean},
+  file = {./files/boolean2.pdf},
+}
+
 @article{onesided,
   title = {Generalized {LR} Parsing Algorithm for Grammars with One-Sided Contexts},
   author = {xdata=mikhailbarash-author and xdata=alexanderokhotin-author},
@@ -211,25 +314,42 @@ Papers
   doi = {10.1145/2429069.2429129},
 }
 
-@article{lalrk,
+@techreport{kristensen-lalrk-report,
   title = {Methods for computing {LALR}(k) lookahead},
   author = {xdata=bentkristensen-author and xdata=olemadsen-author},
-  journaltitle = {DAIMI Report Series},
+  institution = {Aalborg University Center},
+  location = {Aalborg, Denmark},
   date = {1979-07},
 
   number = {101},
   volume = {8},
 
   keywords = {parsing},
-  file = {./files/lalrk.pdf},
+  file = {./files/kristensen-lalrk-report.pdf},
   doi = {10.7146/dpb.v8i101.6517},
+}
+
+@article{kristensen-lalrk,
+  title = {Methods for Computing LALR(k) Lookahead},
+  author = {xdata=bentkristensen-author and xdata=olemadsen-author},
+  month = {jan},
+  year = {1981},
+  xdata = {pls},
+
+  volume = {3},
+  number = {1},
+  pages = {60–82},
+
+  keywords = {parsing},
+  file = {./files/kristensen-lalrk.pdf},
+  doi = {10.1145/357121.357126},
 }
 
 @article{general-sppf,
   title = {Recognition is not parsing --- {SPPF}-style parsing from cubic recognisers},
   author = {xdata=elizabethscott-author and xdata=adrianjohnstone-author},
-  journaltitle = {Science of Computer Programming},
   year = 2010,
+  xdata = {scp},
 
   month = jan,
   volume = {75},
@@ -239,6 +359,622 @@ Papers
   keywords = {parsing,earley},
   file = {./files/general-sppf.pdf},
   doi = {10.1016/j.scico.2009.07.001},
+}
+
+@article{schrodinger,
+  title = {Schr{\"o}dinger's token},
+  author = {xdata=johnaycock-author and xdata=nigelhorspool-author},
+  year = 2001,
+  xdata = {spe},
+  
+  volume = {31},
+  number = {8},
+  pages = {803--814},
+
+  keywords = {parsing,scanning},
+  file = {./files/schrodinger.pdf},
+  doi = {https://doi.org/10.1002/spe.390},
+}
+
+@techreport{sglr,
+  author = {xdata=eelcovisser-author},
+  title = {Scannerless Generalized-{LR} Parsing},
+  institution = {University of Amsterdam, Programming Research Group},
+  address = {Amsterdam, Netherlands},
+  year = 1997,
+
+  keywords = {parsing,scanning},
+  file = {./files/sglr.pdf},
+}
+
+@inproceedings{nslr,
+  author = {xdata=danielsalomon-author and xdata=gordoncormack-author},
+  title = {Scannerless {NSLR}(1) Parsing of Programming Languages},
+
+  volume = 24,
+  pages = {170--178},
+
+  crossref = {sigplan89},
+  keywords = {parsing,scanning},
+}
+
+@inproceedings{context-aware,
+  title = {Context-aware scanning for parsing extensible languages},
+  author = {xdata=ericvanwyk-author and xdata=augustschwerdfeger-author},
+  crossref = {gpce07},
+
+  pages = {63--72},
+
+  keywords = {scanning},
+  doi = {10.1145/1289971.1289983},
+}
+
+---
+
+@article{grammargraph,
+    title         = {Speeding up circularity tests for attribute grammars},
+    volume        = {21},
+    issn          = {1432-0525},
+    url           = {http://dx.doi.org/10.1007/bf00264616},
+    doi           = {10.1007/bf00264616},
+    number        = {4},
+    journal       = {Acta Informatica},
+    publisher     = {Springer Science and Business Media LLC},
+    author        = {Deransart, Pierre and Jourdan, Martin and Lorho, Bernard},
+    year          = {1984},
+    month         = {Nov}
+}
+
+@inproceedings{approx,
+    author       = {Evans, Edmund Grimley},
+    title        = {Approximating Context-Free Grammars with a Finite-State Calculus},
+    year         = {1997},
+    publisher    = {Association for Computational Linguistics},
+    organization = {Association for Computational Linguistics},
+    address      = {USA},
+    url          = {https://doi.org/10.3115/976909.979675},
+    doi          = {10.3115/976909.979675},
+    booktitle    = {Proceedings of the 35th Annual Meeting of the Association for Computational Linguistics and Eighth Conference of the European Chapter of the Association for Computational Linguistics},
+    pages        = {452–459},
+    numpages     = {8},
+    location     = {Madrid, Spain},
+    series       = {ACL '98/EACL '98}
+}
+
+
+
+@phdthesis{pseudo-scannerless,
+    author         = {Joel E. Denny},
+    title          = {{PSLR}(1): Pseudo-Scannerless Minimal {LR}(1) for the Deterministic Parsing of Composite Languages},
+    school         = {Clemson University},
+    publisher      = {Clemson University},
+    address        = {Clemson, USA},
+    year           = 2010
+}
+
+@unpublished{conflict-resolution,
+    author         = {Nathan Keynes},
+    title          = {Better Parsing Through Lexical Conflict Resolution},
+    year           = 2007,
+    note           = "Unpublished thesis, available at http://www.deadcoderemoval.net/files/honours-thesis.pdf (visited on 2022-02-04)"
+}
+
+@article{nawrocki,
+    author         = {Jerzy R. Nawrocki},
+    title          = {Conflict detection and resolution in a lexical analyzer generator},
+    volume         = 38,
+    number         = 6,
+    pages          = {323--328},
+    journal        = {Information Processing Letters},
+    year           = 1991,
+    publisher      = {Elsevier}
+}
+
+@inproceedings{fastersglr,
+    author         = {Giorgios Economopoulos and Paul Klint and Jurgen Vinju},
+    editor         = {Björn Franke},
+    title          = {Faster scannerless GLR parsing},
+    booktitle      = {Compiler Construction},
+    pages          = {126--141},
+    organization   = {ETAPS},
+    volume         = 24,
+    year           = 2009,
+    publisher      = {Springer}
+}
+
+@article{lamb,
+    author        = {Luis Quesada and Fernando Berzal and Francisco J. Cortijo},
+    title         = {A Lexical Analyzer with Ambiguity Support},
+    booktitle     = {Proceedings of the 6th International Conference on Software and Database Technologies},
+    year          = 2011,
+    publisher     = {SciTePress},
+    organization  = {ICSOFT},
+    pages         = {297--300}
+}
+
+@inproceedings{fence,
+    author        = {Luis Quesada and Fernando Berzal and Francisco J. Cortijo},
+    editor        = {José Cordeiro and Slimane Hammoudi and Marten van Sinderen},
+    title         = {Fencing the Lamb: A Chart Parser for ModelCC},
+    booktitle     = {Software and Data Technologies},
+    pages         = {21--35},
+    year          = 2012,
+    volume        = 27,
+    organization  = {ICSOFT},
+    publisher     = {Springer}
+}
+
+@article{xglr,
+    author        = {Andrew Begel and Susan L. Graham},
+    title         = {XGLR: an algorithm for ambiguity in programming languages},
+    volume        = 61,
+    number        = 3,
+    journal       = {Science of Computer Programming},
+    pages         = {211--227},
+    year          = 2006,
+    publisher     = {Elsevier}
+}
+
+@book{glrbook1,
+    author        = {Masaru Tomita},
+    title         = {Efficient Parsing for Natural Language},
+    year          = 1986,
+    publisher     = {Springer}
+}
+
+@book{glrbook2,
+    editor        = {Masaru Tomita},
+    title         = {Generalized LR Parsing},
+    year          = 1991,
+    publisher     = {Springer}
+}
+
+@article{rnglr,
+    author        = {Elizabeth Scott and Adrian Johnstone},
+    title         = {Right nulled GLR parsers},
+    volume        = 28,
+    number        = 4,
+    journal       = {ACM Transactions on Programming Languages and Systems},
+    year          = 2006,
+    pages         = {577–618},
+    publisher     = {ACM}
+}
+
+@phdthesis{context-aware-thesis,
+    author        = {August C. Schwerdfeger},
+    title         = {Context-aware scanning and determinism-preserving grammar composition, in theory and practice},
+    school        = {University of Minnesota},
+    publisher     = {University of Minnesota},
+    address       = {Minneapolis, USA},
+    year          = 2010
+}
+
+@misc{treesitter,
+    author        = {Max Brunsfeld},
+    title         = {Tree-sitter},
+    howpublished  = {https://tree-sitter.github.io/tree-sitter/ (visited on 2022-02-04)}
+}
+
+@article{automata-derivatives,
+    author        = {Scott Owens and John Reppy and Aaron Turon},
+    title         = {Regular-expression derivatives re-examined},
+    volume        = 19,
+    number        = 2,
+    journal       = {Journal of Functional Programming},
+    pages         = {173–-190},
+    year          = 2009,
+    publisher     = {Cambridge University Press},
+}
+
+@inproceedings{languagecomp1,
+    author         = {August C. Schwerdfeger and Eric R. Van Wyk},
+    editor         = {Michael Hind and Amer Diwan},
+    title          = {Verifiable composition of deterministic grammars},
+    booktitle      = {Proceedings of the 30th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+    organization   = {ACM SIGPLAN},
+    pages          = {199--210},
+    volume         = 44,
+    year           = 2009,
+    publisher      = {ACM}
+}
+
+@article{dsl,
+    title          = {When and how to develop domain-specific languages},
+    author         = {Marjan Mernik and Jan Heering and Anthony M Sloane},
+    journal        = {ACM computing surveys (CSUR)},
+    volume         = 37,
+    number         = 4,
+    pages          = {316--344},
+    year           = 2005,
+    publisher      = {ACM}
+}
+
+@inproceedings{prefix-free,
+    author         = {Monika Krausov{\'a}},
+    editor         = {Z. Kot{\'a}sek and J. Bouda and I. \v{C}ern{\'a} and L. Sekanina and T. Vojnar and D. Anto\v{s}},
+    title          = {Prefix-Free Regular Languages: Closure Properties, Difference, and Left Quotient},
+    booktitle      = {Mathematical and Engineering Methods in Computer Science},
+    volume         = 7119,
+    year           = 2012,
+    publisher      = {Springer},
+    organization   = {Springer}
+}
+
+@article{prefix-disjoint,
+    author        = {Roman R. Redziejowski},
+    volume        = 128,
+    number        = {1-2},
+    pages         = {177--191},
+    title         = {From {EBNF} to {PEG}},
+    journal       = {Fundamenta Informaticae},
+    year          = 2013,
+    publisher     = {{IOS} Press}
+}
+
+@techreport{automata-taxonomy,
+    author         = {B. W. Watson},
+    title          = {A taxonomy of finite automata construction algorithms},
+    year           = 1993,
+    institution    = {Eindhoven University of Technology},
+    address        = {Eindhoven, Netherlands}
+}
+
+@inproceedings{extendedre,
+    author         = {I. D. Baxter and C. Pidgeon and M. Mehlich},
+    editor         = {Frances Titsworth},
+    booktitle      = {Proceedings of the 26th International Conference on Software Engineering}, 
+    title          = {DMS: program transformations for practical scalable software evolution}, 
+    year           = 2004,
+    pages          = {625-634},
+    organization   = {IEEE/ACM},
+    publisher      = {IEEE}
+}
+
+@incollection{farshi,
+    title          = {GLR Parsing for $\varepsilon$-Grammers},
+    editor         = {Masaru Tomita},
+    author         = {Nozohoor-Farshi, Rahman},
+    booktitle      = {Generalized LR parsing},
+    pages          = {61--75},
+    year           = 1991,
+    publisher      = {Springer}
+}
+
+@incollection{kipps,
+    title         = {GLR parsing in time $O(n^3)$},
+    editor        = {Masaru Tomita},
+    author        = {Kipps, James R},
+    booktitle     = {Generalized LR parsing},
+    pages         = {43--59},
+    year          = 1991,
+    publisher     = {Springer}
+}
+
+@phdthesis{rekers,
+    author       = {Jan G Rekers},
+    title        = {Parser generation for interactive environments},
+    year         = 1992,
+    school       = {Universty of Amsterdam},
+    publisher    = {Universty of Amsterdam},
+    address      = {Amsterdam, Netherlands}
+}
+
+@inproceedings{lbnf,
+    author       = {Markus Forsberg and Aarne Ranta},
+    editor       = {Henrik Nilsson},
+    title        = {BNF converter},
+    booktitle    = {Proceedings of the 2004 ACM SIGPLAN workshop on Haskell},
+    organization = {ACM SIGPLAN},
+    publisher    = {ACM},
+    pages        = {94--95},
+    year         = {2004}
+}
+
+@article{grammarzoo,
+    author       = {Vadim Zaytsev},
+    title        = {Grammar Zoo: A corpus of experimental grammarware},
+    journal      = {Science of Computer Programming},
+    volume       = 98,
+    pages        = {28--51},
+    year         = 2015,
+    publisher    = {Elsevier}
+}
+
+@article{ecfgglr,
+    author       = {Angelo Borsotti and Luca Breveglieri and Stefano {Crespi Reghizzi} and Angelo Morzenti},
+    title        = {Fast GLR parsers for extended BNF grammars and transition networks},
+    journal      = {Journal of Computer Languages},
+    volume       = 64,
+    pages        = {101035},
+    year         = 2021,
+    publisher    = {Elsevier}
+}
+
+@misc{cpu,
+    author       = {Rafael J. Wysocki},
+    title        = {intel\_pstate CPU Performance Scaling Driver},
+    howpublished = {https://www.kernel.org/doc/html/v4.19/admin-guide/pm/intel\_pstate.html (visited on 2022-02-04)}
+}
+
+@misc{jsonwebsite,
+    author       = {Douglas Crockford},
+    title        = {JSON},
+    howpublished = {https://www.json.org/json-en.html (visited on 2022-02-04)}
+}
+
+@book{pascalspec,
+    title={Pascal ISO 7185:1990},
+    author={{ISO Pascal working group}},
+    year={1991}
+}
+
+@article{gll,
+    author       = {L. Thomas {van Binsbergen} and Elizabeth Scott and Adrian Johnstone},
+    title        = {Purely functional GLL parsing},
+    journal      = {Journal of Computer Languages},
+    volume       = 58,
+    pages        = {100945},
+    year         = 2020,
+    publisher    = {Elsevier}
+}
+
+@article{synthesis,
+    author       = {João Saffran and Haniel Barbosa and Fernando Magno Quintão Pereira and Srinivas Vladamani},
+    title        = {On-line synthesis of parsers for string events},
+    journal      = {Journal of Computer Languages},
+    volume       = 62,
+    pages        = {101022},
+    year         = 2021,
+    publisher    = {Elsevier}
+}
+
+@article{rrp,
+    author        = {Wilf R. LaLonde},
+    title         = {Regular right part grammars and their parsers},
+    volume        = {20},
+    number        = {10},
+    journal       = {Communications of the ACM},
+    publisher     = {ACM},
+    year          = 1977,
+    pages         = {731–-741}
+}
+
+@inproceedings{fasterglr,
+    author       = {John Aycock and Nigel R. Horspool},
+    editor       = {J{\"a}hnichen, Stefan},
+    title        = {Faster Generalized {LR} Parsing},
+    booktitle    = {Compiler Construction},
+    year         = 1999,
+    organization = {ETAPS},
+    publisher    = {Springer},
+    pages        = {32--46}
+}
+
+@inproceedings{gregular,
+    author       = {Adrian Johnstone and Elizabeth Scott},
+    editor       = {Hedin, G{\"o}rel},
+    title        = {Generalised Regular Parsers},
+    booktitle    = {Compiler Construction},
+    year         = 2003,
+    organization = {ETAPS},
+    publisher    = {Springer},
+    pages        = {232--246}
+}
+
+@inproceedings{sglrdis,
+    author       = {Mark G. J {Van den} Brand and Jeroen Scheerder and Jurgen J. Vinju and Eelco Visser},
+    editor       = {Nigel R. Horspool},
+    title        = {Disambiguation Filters for Scannerless Generalized {LR} Parsers},
+    booktitle    = {Compiler Construction},
+    year         = 2002,
+    organization = {ETAPS},
+    publisher    = {Springer},
+    pages        = {143--158}
+}
+
+@article{parglare,
+    author = {Igor Dejanović},
+    title = {Parglare: A {LR/GLR} parser for Python},
+    journal = {Science of Computer Programming},
+    volume = {214},
+    pages = {102734},
+    year = {2022}
+}
+
+@inproceedings{slivnik,
+    author =	{Bo{\v{s}}tjan Slivnik},
+    title =	{{LLLR Parsing: a Combination of LL and LR Parsing}},
+    booktitle =	{5th Symposium on Languages, Applications and Technologies (SLATE'16)},
+    pages =	{5:1--5:13},
+    year =	{2016},
+    volume =	{51},
+    editor =	{Marjan Mernik and Jos{\'e} Paulo Leal and Hugo Gon{\c{c}}alo Oliveira},
+    publisher = {Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik}
+}
+
+@inproceedings{rascal,
+    author={Klint, Paul and van der Storm, Tijs and Vinju, Jurgen},
+    booktitle={2009 Ninth IEEE International Working Conference on Source Code Analysis and Manipulation}, 
+    title={RASCAL: A Domain Specific Language for Source Code Analysis and Manipulation}, 
+    year={2009},
+    volume={},
+    number={},
+    pages={168-177},
+}
+
+@article{asf,
+    title = {The Asf+Sdf Meta-Environment: A Component-Based Language Development Environment},
+    journal = {Electronic Notes in Theoretical Computer Science},
+    volume = {44},
+    number = {2},
+    pages = {3-8},
+    year = {2001},
+    issn = {1571-0661},
+    author = {M.G.J. {van den Brand} and A. {van Deursen} and J. Heering and H.A. {de Jong} and M. {de Jonge} and T. Kuipers and P. Klint and L. Moonen and P.A. Olivier and J. Scheerder and J.J. Vinju and E. Visser and J. Visser},
+}
+
+@inproceedings{spoofax,
+    author = {Kats, Lennart C.L. and Visser, Eelco},
+    title = {The Spoofax Language Workbench: Rules for Declarative Specification of Languages and IDEs},
+    year = {2010},
+    isbn = {9781450302036},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    booktitle = {Proceedings of the ACM International Conference on Object Oriented Programming Systems Languages and Applications},
+    pages = {444–463},
+    numpages = {20},
+    location = {Reno/Tahoe, Nevada, USA},
+    series = {OOPSLA '10}
+}
+
+@unpublished{reviewer,
+    title={Effective Cascade Dual-Decoder Model for Joint Entity and Relation Extraction},
+    author={Ma, Lianbo and Ren, Huimin and Zhang, Xiliang},
+    year={2021},
+    note   = "Unpublished paper, available at https://arxiv.org/pdf/2106.14163 (visited on 2022-06-16)"
+}
+
+@article{spoofax2,
+    title={Spoofax: An Extensible, Interactive Development Environment for Program Transformation with Stratego/XT},
+    author={Kalleberg, Karl Trygve and Visser, Eelco},
+    journal={Technical Report Series TUD-SERG-2007-018},
+    year={2007},
+    publisher={Citeseer}
+}
+
+@inproceedings{taggednfa,
+    author={Laurikari, V.},
+    booktitle={Proceedings Seventh International Symposium on String Processing and Information Retrieval. SPIRE 2000}, 
+    title={NFAs with tagged transitions, their conversion to deterministic automata and application to regular expressions}, 
+    year={2000},
+    pages={181-187}
+}
+
+@article{morbig,
+    title = {Morbig: A Static parser for POSIX shell},
+    journal = {Journal of Computer Languages},
+    volume = {57},
+    pages = {100944},
+    year = {2020},
+    author = {Yann Régis-Gianas and Nicolas Jeannerod and Ralf Treinen},
+}
+
+@article{muli,
+    title = {A compiler and virtual machine for constraint-logic object-oriented programming with Muli},
+    journal = {Journal of Computer Languages},
+    volume = {53},
+    pages = {63-78},
+    year = {2019},
+    author = {Jan C. Dageförde and Herbert Kuchen}
+}
+
+@article{unicode,
+  title={The unicode standard},
+  author={Allen, Julie D and Anderson, Deborah and Becker, Joe and Cook, Richard and Davis, Mark and Edberg, Peter and Everson, Michael and Freytag, Asmus and Iancu, Laurentiu and Ishida, Richard and others},
+  journal={Mountain view, CA},
+  pages={660--664},
+  year={2012},
+  publisher={Citeseer}
+}
+
+@Article{own,
+    author = {Leber, Žiga and Črepinšek, Matej and Mernik, Marjan and Kosar, Tomaž},
+    title = {RNGSGLR: Generalization of the Context-Aware Scanning Architecture for All Character-Level Context-Free Languages},
+    journal = {Mathematics},
+    volume = {10},
+    year = {2022},
+    number = {14}
+}
+
+@article{suffix,
+    author = { Benjamin R.   Seyfarth  and  Manuel E.   Bermudez },
+    title = {Suffix languages in Lr parsing},
+    journal = {International Journal of Computer Mathematics},
+    volume = {55},
+    number = {3-4},
+    pages = {135-153},
+    year  = {1995},
+    publisher = {Taylor & Francis},
+}
+
+@article{lookahead,
+    author = { Manuel E.   Bermudez  and  Karl M.   Schimpf },
+    title = {A general model for fixed look-ahead lr parsers},
+    journal = {International Journal of Computer Mathematics},
+    volume = {24},
+    number = {3-4},
+    pages = {237-271},
+    year  = {1988},
+    publisher = {Taylor & Francis},
+}
+
+@article{pennello,
+    author = {DeRemer, Frank and Pennello, Thomas},
+    title = {Efficient Computation of LALR(1) Look-Ahead Sets},
+    year = {1982},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {4},
+    number = {4},
+    journal = {ACM Trans. Program. Lang. Syst.},
+    month = {10},
+    pages = {615–649}
+}
+
+@article{enhanced,
+title = {Simple computation of LALR(1) lookahead sets},
+journal = {Information Processing Letters},
+volume = {31},
+number = {5},
+pages = {233-238},
+year = {1989},
+author = {Manuel E. Bermudez and George Logothetis},
+}
+
+@article{pager,
+  year =         1977,
+  publisher =    {Springer-Verlag},
+  volume =       7,
+  number =       3,
+  pages =        {249--268},
+  author =       {David Pager},
+  title =        {A Practical General Method for Constructing {LR}(k) Parsers},
+  journal =      {Acta Informatica},
+}
+
+@article{ielr,
+  year =         2010,
+  month =        11,
+  publisher =    {Elsevier {B.V.}},
+  volume =       75,
+  number =       11,
+  pages =        {943--979},
+  author =       {Joel E. Denny and Brian A. Malloy},
+  title =        {The {IELR}(1) Algorithm for Generating Minimal {LR}(1) Parser Tables for
+                  non-{LR}(1) Grammars with Conflict Resolution},
+  journal =      {Science of Computer Programming},
+}
+
+@article{MERNIK2013,
+    title = "An object-oriented approach to language compositions for software language engineering",
+    journal = "Journal of Systems and Software",
+    volume = "86",
+    number = "9",
+    pages = "2451 - 2464",
+    year = "2013",
+    issn = "0164-1212",
+    author = "Marjan Mernik"
+}
+
+@article{Fister2012ICT,
+    title = "EasyTime++: A case study on incremental domain-specific language development.",
+    journal = "Information Technology and Control",
+    volume = "42",
+    number = "1",
+    pages = "77 - 85",
+    year = "2013",
+    author = {I.Jr. Fister and T. Kosar and I. Fister and  M. Mernik.}
+}
 }
 
 vim: ts=4 sts=2 sw=2 et:

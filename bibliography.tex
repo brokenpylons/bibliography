@@ -14,7 +14,7 @@ runcolor=Red,
 }
 
 \usepackage[wider]{rmpage}
-\usepackage[style=draft,sorting=ynt,doi=false]{biblatex}
+\usepackage[style=draft,sorting=ynt,doi=false,useprefix]{biblatex}
 \addbibresource{bibliography.bib}
 
 \DeclareFieldFormat{date}{\mkbibbold{#1}}
@@ -36,4 +36,5 @@ runcolor=Red,
 \nocite{*}
 \printbibliography[title=Full]
 \printbibliography[keyword=parsing,title=Parsing]
+\printbibliography[keyword=scanning,title=Scanning]
 \end{document}
