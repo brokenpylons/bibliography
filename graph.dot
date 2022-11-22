@@ -1,19 +1,43 @@
 digraph biblography {
-    "pager-tracing"[xlabel=1973]
-    "pager-minimal"[xlabel=1977]
-    "pager-tracing2"[xlabel=2009]
-    "chen-minimal"[xlabel=2011]
-    "pager-firstk"[xlabel=2013]
+    subgraph cluster_0 {
+        label = "Minimal LR"
 
-    "ielr"[xlabel=2010]
-    "pslr"[xlabel=2010]
+        "pager-tracing"[xlabel=1973]
+        "pager-minimal"[xlabel=1977]
+        "pager-tracing2"[xlabel=2009]
+        "chen-minimal"[xlabel=2011]
+        "pager-firstk"[xlabel=2013]
+        "ielr"[xlabel=2010]
 
-    "pager-minimal" -> "pager-tracing" 
-    "pager-tracing2" -> "pager-tracing"
-    "chen-minimal" -> "pager-tracing"
-    "pager-firstk" -> "chen-minimal"
+        "pager-minimal" -> "pager-tracing" 
+        "pager-tracing2" -> "pager-tracing"
+        "chen-minimal" -> "pager-tracing"
+        "pager-firstk" -> "chen-minimal"
+        "ielr" -> "pager-tracing"
+        "ielr" -> "pager-minimal"
+    }
 
-    "ielr" -> "pager-tracing"
-    "ielr" -> "pager-minimal"
-    "pslr" -> "ielr"
+    subgraph cluster_1 {
+        label = "Scanning"
+
+        "snslr"[xlabel=1989]
+        "nawrocki-scanning"[xlabel=1991]
+        "keynes-scanning"[xlabel=2007]
+        "pslr"[xlabel=2010]
+        "context-aware"[xlabel=2007]
+        "context-aware-thesis"[xlabel=2010]
+
+        "keynes-scanning" -> "nawrocki-scanning" 
+        "keynes-scanning" -> "snslr"
+        "pslr" -> "ielr"
+        "pslr" -> "keynes-scanning"
+        "pslr" -> "context-aware"
+        "pslr" -> "context-aware-thesis"
+        "context-aware-thesis" -> "pslr"
+    }
+
+
+
+
+
 }
