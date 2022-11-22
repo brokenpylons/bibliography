@@ -1,0 +1,19 @@
+digraph biblography {
+    "pager-tracing"[xlabel=1973]
+    "pager-minimal"[xlabel=1977]
+    "pager-tracing2"[xlabel=2009]
+    "chen-minimal"[xlabel=2011]
+    "pager-firstk"[xlabel=2013]
+
+    "ielr"[xlabel=2010]
+    "pslr"[xlabel=2010]
+
+    "pager-minimal" -> "pager-tracing" 
+    "pager-tracing2" -> "pager-tracing"
+    "chen-minimal" -> "pager-tracing"
+    "pager-firstk" -> "chen-minimal"
+
+    "ielr" -> "pager-tracing"
+    "ielr" -> "pager-minimal"
+    "pslr" -> "ielr"
+}
