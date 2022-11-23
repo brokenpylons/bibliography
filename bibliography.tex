@@ -14,7 +14,7 @@ runcolor=Red,
 }
 
 \usepackage[wider]{rmpage}
-\usepackage[style=draft,sorting=ynt,doi=false,useprefix]{biblatex}
+\usepackage[style=draft,sorting=ynt,doi=false,useprefix,maxnames=10]{biblatex}
 \addbibresource{bibliography.bib}
 
 \DeclareFieldFormat{date}{\mkbibbold{#1}}
@@ -34,9 +34,12 @@ runcolor=Red,
 
 \begin{document}
 \nocite{*}
-\printbibliography[title=Full]
+\printbibliography[nottype=proceedings,title=Full]
 \printbibliography[keyword=parsing,title=Parsing]
 \printbibliography[keyword=scanning,title=Scanning]
 \printbibliography[keyword=lookahead,title=Lookahead]
 \printbibliography[keyword=lr,title=LR]
+\printbibliography[keyword=automata,title=Automata]
+\printbibliography[keyword=composition,title=Composition]
+\printbibliography[type=proceedings,title=Proceedings]
 \end{document}
