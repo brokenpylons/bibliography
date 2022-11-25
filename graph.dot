@@ -1,5 +1,37 @@
 digraph biblography {
-    subgraph cluster_0 {
+
+    subgraph cluster_lr {
+        label = "LR"
+            "lr"[xlabel=1965]
+    }
+
+    subgraph cluster_tn {
+        label = "Transition networks"
+            "tn"[xlabel=1970]
+    }
+
+    subgraph cluster_earley {
+        label = "Earley"
+            "earley"[xlabel=1970]
+            "practical-earley"[xlabel=2002]
+            "ecfg-earley"[xlabel=2010]
+
+            "practical-earley" -> "earley"
+            "ecfg-earley" -> "earley"
+            "ecfg-earley" -> "tn"
+            "ecfg-earley" -> "practical-earley"
+    }
+
+    "lecture-notes-compiler-construction"[xlabel=1974, shape=box]
+    "lecture-notes-compiler-construction" -> "lr"
+    "lecture-notes-compiler-construction" -> "earley"
+    "parsingtechniques"[xlabel=2008,shape=box]
+    "parsingtechniques" -> "lr"
+    "parsingtechniques" -> "earley"
+    "parsingtechniques" -> "snslr"
+    "dragonbook"[xlabel=2006,shape=box]
+
+    subgraph cluster_minimal_lr {
         label = "Minimal LR"
 
         "pager-tracing"[xlabel=1973]
@@ -9,6 +41,7 @@ digraph biblography {
         "pager-firstk"[xlabel=2013]
         "ielr"[xlabel=2010]
 
+        "pager-tracing" -> "lr"
         "pager-minimal" -> "pager-tracing" 
         "pager-tracing2" -> "pager-tracing"
         "chen-minimal" -> "pager-tracing"
@@ -17,7 +50,7 @@ digraph biblography {
         "ielr" -> "pager-minimal"
     }
 
-    subgraph cluster_1 {
+    subgraph cluster_scanning {
         label = "Scanning"
 
         "snslr"[xlabel=1989]
