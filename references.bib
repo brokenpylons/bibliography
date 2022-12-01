@@ -468,6 +468,10 @@
   author = {Michael A. Harrison},
 }
 
+@xdata{walterruzzo,
+  author = {Ruzzo, Walter L.},
+}
+
 @comment(Publishers)
 
 @xdata{springer-ny,
@@ -1001,6 +1005,7 @@
   file = {./files/boolean2.pdf},
 }
 
+
 @article{onesided,
   title = {Generalized {LR} Parsing Algorithm for Grammars with One-Sided Contexts},
   author = {xdata=mikhailbarash-author and xdata=alexanderokhotin-author},
@@ -1040,7 +1045,7 @@
   doi = {10.1145/2429069.2429129},
 }
 
-@techreport{kristensen-lalrk-report,
+@techreport{madsen-kristensen-lalrk-report,
   title = {Methods for computing {LALR}(k) lookahead},
   author = {xdata=bentkristensen-author and xdata=olemadsen-author},
   institution = {Aalborg University Center},
@@ -1051,11 +1056,11 @@
   volume = {8},
 
   keywords = {parsing},
-  file = {./files/kristensen-lalrk-report.pdf},
+  file = {./files/madsen-kristensen-lalrk-report.pdf},
   doi = {10.7146/dpb.v8i101.6517},
 }
 
-@article{kristensen-lalrk,
+@article{madsen-kristensen-lalrk,
   title = {Methods for Computing LALR(k) Lookahead},
   author = {xdata=bentkristensen-author and xdata=olemadsen-author},
   date = {1981},
@@ -1066,7 +1071,7 @@
   pages = {60–82},
 
   keywords = {parsing},
-  file = {./files/kristensen-lalrk.pdf},
+  file = {./files/madsen-kristensen-lalrk.pdf},
   doi = {10.1145/357121.357126},
 }
 
@@ -1223,6 +1228,7 @@
   pages = {211--227},
 
   keywords = {scanning},
+  file = {./files/xglr.pdf},
 }
 
 @book{glr1,
@@ -1596,7 +1602,7 @@
 
   volume = {13},
   number = {10},
-  pages = {591–606},
+  pages = {591–-606},
 
   keywords = {parsing,tn},
   file = {./files/tn.pdf},
@@ -1653,7 +1659,6 @@
   file = {./files/parsing-deduction.pdf},
   doi = {10.3115/981311.981338},
 }
-
 
 @inproceedings{parsing-dynamic,
   title = {Dynamic programming as frame for efficient parsing}, 
@@ -1759,7 +1764,9 @@
 
 @article{graham-improved,
   title = {An Improved Context-Free Recognizer},
-  author = {Graham, Susan L. and Harrison, Michael and Ruzzo, Walter L.},
+  author = {xdata=susangraham-author and xdata=michaelharrison-author and xdata=
+
+    Graham, Susan L. and Harrison, Michael and Ruzzo, Walter L.},
   date = {1980},
   xdata = {atpls},
 
@@ -1780,7 +1787,7 @@
   file = {./files/lecture-notes-compiler-construction.pdf}
 }
 
-@article{kristensen-rrpg,
+@article{madsen-kristensen-rrpg,
   doi = {10.1007/bf00265221},
   url = {https://doi.org/10.1007%2Fbf00265221},
   year = 1976,
@@ -1792,7 +1799,7 @@
   title = {{LR}-parsing of extended context free grammars},
   journal = {Acta Informatica},
 
-  file = {./files/kristensen-rrpg.pdf},
+  file = {./files/madsen-kristensen-rrpg.pdf},
 }
 
 @article{ecfg-elr2,
@@ -1807,186 +1814,182 @@
   author = {Angelo Borsotti and Luca Breveglieri and Stefano Crespi Reghizzi and Angelo Morzenti},
   title = {Fast deterministic parsers for transition networks},
   journal = {Acta Informatica},
-  
+
   file = {./files/ecfg-elr2.pdf},
 }
 
 @article{johnson-scanner,
-author = {Johnson, Walter L. and Porter, James H. and Ackley, Stephanie I. and Ross, Douglas T.},
-title = {Automatic Generation of Efficient Lexical Processors Using Finite State Techniques},
-year = {1968},
-issue_date = {Dec. 1968},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {11},
-number = {12},
-issn = {0001-0782},
-url = {https://doi.org/10.1145/364175.364185},
-doi = {10.1145/364175.364185},
-journal = {Commun. ACM},
-month = {dec},
-pages = {805–813},
-numpages = {9},
-file = {./files/jhonson-scanning.pdf},
+  author = {Johnson, Walter L. and Porter, James H. and Ackley, Stephanie I. and Ross, Douglas T.},
+  title = {Automatic Generation of Efficient Lexical Processors Using Finite State Techniques},
+  year = {1968},
+  issue_date = {Dec. 1968},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {11},
+  number = {12},
+  issn = {0001-0782},
+  url = {https://doi.org/10.1145/364175.364185},
+  doi = {10.1145/364175.364185},
+  journal = {Commun. ACM},
+  month = {dec},
+  pages = {805–813},
+  numpages = {9},
+  file = {./files/jhonson-scanning.pdf},
 }
 
 @article{rrpg-construction,
-	doi = {10.1007/bf00264024},
-	url = {https://doi.org/10.1007%2Fbf00264024},
-	year = 1979,
-	publisher = {Springer Science and Business Media {LLC}},
-	volume = {11},
-	number = {2},
-	author = {WilfR. LaLonde},
-	title = {Constructing {LR} parsers for regular right part grammars},
-	journal = {Acta Informatica},
-    file = {./files/rrpg-construction.pdf},
+  doi = {10.1007/bf00264024},
+  url = {https://doi.org/10.1007%2Fbf00264024},
+  year = 1979,
+  publisher = {Springer Science and Business Media {LLC}},
+  volume = {11},
+  number = {2},
+  author = {WilfR. LaLonde},
+  title = {Constructing {LR} parsers for regular right part grammars},
+  journal = {Acta Informatica},
+  file = {./files/rrpg-construction.pdf},
 }
 
-    @article{tn-cascaded,
-    author = {Woods, William A.},
-    title = {Cascaded ATN Grammars},
-    year = {1980},
-    issue_date = {January-March 1980},
-    publisher = {MIT Press},
-    address = {Cambridge, MA, USA},
-    volume = {6},
-    number = {1},
-    issn = {0891-2017},
-    abstract = {A generalization of the notion of ATN grammar, called a cascaded ATN (CATN), is presented. CATN's permit a decomposition of complex language understanding behavior into a sequence of cooperating ATN's with separate domains of responsibility, where each stage (called an ATN transducer) takes its input from the output of the previous stage. The paper includes an extensive discussion of the principle of factoring -- conceptual factoring reduces the number of places that a given fact needs to be represented in a grammar, and hypothesis factoring reduces the number of distinct hypotheses that have to be considered during parsing.},
-    journal = {Comput. Linguist.},
-    month = {jan},
-    pages = {1–12},
-    numpages = {12},
-    file = {./files/tn-cascaded.pdf}
-    }
+@article{tn-cascaded,
+  author = {Woods, William A.},
+  title = {Cascaded ATN Grammars},
+  year = {1980},
+  issue_date = {January-March 1980},
+  publisher = {MIT Press},
+  address = {Cambridge, MA, USA},
+  volume = {6},
+  number = {1},
+  issn = {0891-2017},
+  journal = {Comput. Linguist.},
+  month = {jan},
+  pages = {1–12},
+  numpages = {12},
+  file = {./files/tn-cascaded.pdf}
+}
 
-      
-      @article{10.1145/357133.357138,
-author = {LaLonde, Wilf R.},
-title = {The Construction of Stack-Controlling LR Parsers for Regular Right Part Grammars},
-year = {1981},
-issue_date = {April 1981},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {3},
-number = {2},
-issn = {0164-0925},
-url = {https://doi.org/10.1145/357133.357138},
-doi = {10.1145/357133.357138},
-journal = {ACM Trans. Program. Lang. Syst.},
-month = {apr},
-pages = {168–206},
-numpages = {39},
-file = {./files/rrpg-stack-controling.pdf},
+@article{10.1145/357133.357138,
+  author = {LaLonde, Wilf R.},
+  title = {The Construction of Stack-Controlling LR Parsers for Regular Right Part Grammars},
+  year = {1981},
+  issue_date = {April 1981},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {3},
+  number = {2},
+  issn = {0164-0925},
+  url = {https://doi.org/10.1145/357133.357138},
+  doi = {10.1145/357133.357138},
+  journal = {ACM Trans. Program. Lang. Syst.},
+  month = {apr},
+  pages = {168–206},
+  numpages = {39},
+  file = {./files/rrpg-stack-controling.pdf},
 }
 
 @article{morimoto-ecfg,
-author = {Morimoto, Shin-ichi and Sassa, Masataka},
-year = {2001},
-month = {06},
-pages = {671-697},
-title = {Yet another generation of LALR parsers for regular right part grammars},
-volume = {37},
-journal = {Acta Inf.},
-doi = {10.1007/PL00013318},
-file = {./files/morimoto-ecfg.pdf}
+  author = {Morimoto, Shin-ichi and Sassa, Masataka},
+  year = {2001},
+  month = {06},
+  pages = {671-697},
+  title = {Yet another generation of LALR parsers for regular right part grammars},
+  volume = {37},
+  journal = {Acta Inf.},
+  doi = {10.1007/PL00013318},
+  file = {./files/morimoto-ecfg.pdf}
 }
 
 @article{Nakata_1986,
-	doi = {10.1007/bf00289495},
-	url = {https://doi.org/10.1007%2Fbf00289495},
-	year = 1986,
-	month = {may},
-	publisher = {Springer Science and Business Media {LLC}},
-	volume = {23},
-	number = {2},
-	pages = {149--162},
-	author = {Ikuo Nakata and Masataka Sassa},
-	title = {Generation of efficient {LALR} parsers for regular right part grammars},
-	journal = {Acta Informatica},
-    file = {./files/rrpg-lalrk.pdf}
+  doi = {10.1007/bf00289495},
+  url = {https://doi.org/10.1007%2Fbf00289495},
+  year = 1986,
+  month = {may},
+  publisher = {Springer Science and Business Media {LLC}},
+  volume = {23},
+  number = {2},
+  pages = {149--162},
+  author = {Ikuo Nakata and Masataka Sassa},
+  title = {Generation of efficient {LALR} parsers for regular right part grammars},
+  journal = {Acta Informatica},
+  file = {./files/rrpg-lalrk.pdf}
 }
 
 @inproceedings{10.1145/503896.503939,
-author = {Sager, Thomas J.},
-title = {On the Use of Extended Grammars},
-year = {1982},
-isbn = {0897910710},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/503896.503939},
-doi = {10.1145/503896.503939},
-booktitle = {Proceedings of the 20th Annual Southeast Regional Conference},
-pages = {246–252},
-numpages = {7},
-keywords = {semantics, extended LALR(k) grammars, syntax, parser generators},
-location = {Knoxville, Tennessee},
-series = {ACM-SE 20},
-file = {./files/sager-ecfg.pdf}
+  author = {Sager, Thomas J.},
+  title = {On the Use of Extended Grammars},
+  year = {1982},
+  isbn = {0897910710},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/503896.503939},
+  doi = {10.1145/503896.503939},
+  booktitle = {Proceedings of the 20th Annual Southeast Regional Conference},
+  pages = {246–252},
+  numpages = {7},
+  keywords = {semantics, extended LALR(k) grammars, syntax, parser generators},
+  location = {Knoxville, Tennessee},
+  series = {ACM-SE 20},
+  file = {./files/sager-ecfg.pdf}
 }
 
 @article{Purdom_1981,
-	doi = {10.1007/bf00288959},
-	url = {https://doi.org/10.1007%2Fbf00288959},
-	year = 1981,
-	month = {jun},
-	publisher = {Springer Science and Business Media {LLC}},
-	volume = {15},
-	number = {2},
-	pages = {115--127},
-	author = {Paul Walton Purdom and Cynthia A. Brown},
-	title = {Parsing extended {LR}(k) grammars},
-	journal = {Acta Informatica},
-file = {./files/purdom-ecfg.pdf}
+  doi = {10.1007/bf00288959},
+  url = {https://doi.org/10.1007%2Fbf00288959},
+  year = 1981,
+  month = {jun},
+  publisher = {Springer Science and Business Media {LLC}},
+  volume = {15},
+  number = {2},
+  pages = {115--127},
+  author = {Paul Walton Purdom and Cynthia A. Brown},
+  title = {Parsing extended {LR}(k) grammars},
+  journal = {Acta Informatica},
+  file = {./files/purdom-ecfg.pdf},
 }
 
 @article{bidirectional,
-	doi = {10.1007/bf00264023},
-	url = {https://doi.org/10.1007%2Fbf00264023},
-	year = 1979,
-	publisher = {Springer Science and Business Media {LLC}},
-	volume = {11},
-	number = {2},
-	author = {Stephan Heilbrunner},
-	title = {On the definition of {ELR}(k) and {ELL}(k) grammars},
-	journal = {Acta Informatica},
-file = {./files/bidirectional.pdf}
+  title = {Bidirectional context-free grammar parsing for natural language processing},
+  author = {Satta, Giorgio and Stock, Oliviero},
+  journal = {Artificial Intelligence},
+  volume = {69},
+  number = {1-2},
+  pages = {123--164},
+  year = {1994},
+  publisher = {Elsevier},
+  file = {./files/bidirectional.pdf},
 }
 
 @article{nslr,
-author = {Tai, Kou-Chung},
-title = {Noncanonical SLR(1) Grammars},
-year = {1979},
-issue_date = {Oct. 1979},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {1},
-number = {2},
-issn = {0164-0925},
-url = {https://doi.org/10.1145/357073.357083},
-doi = {10.1145/357073.357083},
-abstract = {Two noncanonical extensions of the simple LR(1) (SLR(1)) method are presented, which reduce not only handles but also other phrases of sentential forms. A class of context-free grammars called leftmost SLR(1) (LSLR(1)) is defined by using lookahead symbols which appear in leftmost derivations. This class includes the SLR(1), reflected SMSP, and total precedence grammars as proper subclasses. The class of LSLR(1) languages properly includes the deterministic context-free languages, their reflections, and total precedence languages. By requiring that phrases which have been scanned be reduced as early as possible, a larger class of context-free grammars called noncanonical SLR(1) (NSLR(1)) is defined. The NSLR(1) languages can be recognized deterministically in linear time using a two-stack pushdown automaton. An NSLR(1) parser generator has been implemented. Empirical results show that efficient NSLR(1) parsers can be constructed for some non-LR grammars which generate nondeterministic languages. Applications of the NSLR(1) method to improve the parsing and translation of programming languages are discussed.},
-journal = {ACM Trans. Program. Lang. Syst.},
-month = {oct},
-pages = {295–320},
-numpages = {26},
-file = {./files/nslr.pdf},
+  author = {Tai, Kou-Chung},
+  title = {Noncanonical SLR(1) Grammars},
+  year = {1979},
+  issue_date = {Oct. 1979},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {1},
+  number = {2},
+  issn = {0164-0925},
+  url = {https://doi.org/10.1145/357073.357083},
+  doi = {10.1145/357073.357083},
+  journal = {ACM Trans. Program. Lang. Syst.},
+  month = {oct},
+  pages = {295–320},
+  numpages = {26},
+  file = {./files/nslr.pdf},
 }
 
 @article{celentano-ecfg,
-title = {An LR parsing technique for extended context-free grammars},
-journal = {Computer Languages},
-volume = {6},
-number = {2},
-pages = {95-107},
-year = {1981},
-issn = {0096-0551},
-doi = {https://doi.org/10.1016/0096-0551(81)90069-2},
-url = {https://www.sciencedirect.com/science/article/pii/0096055181900692},
-author = {Augusto Celentano},
-keywords = {LR parsing, Regular expressions, Extended context-free grammars, Parser optimization, Grammar transformation},
-file = {./files/celentano-ecfg.pdf},
+  title = {An LR parsing technique for extended context-free grammars},
+  journal = {Computer Languages},
+  volume = {6},
+  number = {2},
+  pages = {95-107},
+  year = {1981},
+  issn = {0096-0551},
+  doi = {https://doi.org/10.1016/0096-0551(81)90069-2},
+  url = {https://www.sciencedirect.com/science/article/pii/0096055181900692},
+  author = {Augusto Celentano},
+  keywords = {LR parsing, Regular expressions, Extended context-free grammars, Parser optimization, Grammar transformation},
+  file = {./files/celentano-ecfg.pdf},
 }
 
 @phdthesis{ecfg-german,
@@ -1996,6 +1999,176 @@ file = {./files/celentano-ecfg.pdf},
   school={PhD thesis, Technical University of Berlin, Department of Computer Sciences~…},
   file = {./files/ecfg-german.pdf},
 }
+
+@book{parsing_issues,
+  doi = {10.1007/978-1-4615-3986-5},
+  url = {https://doi.org/10.1007%2F978-1-4615-3986-5},
+  year = 1991,
+  publisher = {Springer {US}},
+  editor = {Masaru Tomita},
+  title = {Current Issues in Parsing Technology},
+  file = {./files/parsing-issues.pdf}
+}
+
+@incollection{uniform,
+  doi = {10.1007/978-1-4615-3986-5_11},
+  url = {https://doi.org/10.1007%2F978-1-4615-3986-5_11},
+  year = 1991,
+  publisher = {Springer {US}},
+  pages = {153--171},
+  author = {Bernard Lang},
+  title = {Towards a Uniform Formal Framework for Parsing},
+  booktitle = {Current Issues in Parsing Technology}
+}
+
+@inproceedings{lang-1989-uniform,
+  title = {A Uniform Formal Framework for Parsing},
+  author = {Lang, Bernard},
+  booktitle = {Proceedings of the First International Workshop on Parsing Technologies},
+  month = aug,
+  year = {1989},
+  address = {Pittsburgh, Pennsylvania, USA},
+  publisher = {Carnegy Mellon University},
+  url = {https://aclanthology.org/W89-0204},
+  pages = {28--42},
+}
+
+@inproceedings{lang-1989-uniform,
+  title = {A Uniform Formal Framework for Parsing},
+  author = {Lang, Bernard},
+  booktitle = {Proceedings of the First International Workshop on Parsing Technologies},
+  month = aug,
+  year = {1989},
+  address = {Pittsburgh, Pennsylvania, USA},
+  publisher = {Carnegy Mellon University},
+  url = {https://aclanthology.org/W89-0204},
+  pages = {28--42},
+  abstract = {},
+  file = {./files/parsing-uniform-framework.pdf},
+}
+
+@inproceedings{herman-parsing-derivatives,
+  author = {Herman, Grzegorz},
+  title = {Faster General Parsing through Context-Free Memoization},
+  year = {2020},
+  isbn = {9781450376136},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3385412.3386032},
+  booktitle = {Proceedings of the 41st ACM SIGPLAN Conference on Programming Language Design and Implementation},
+  pages = {1022–1035},
+  numpages = {14},
+  keywords = {GLL, memoization, GLR, generalized parsing, context-free, Earley},
+  location = {London, UK},
+  series = {PLDI 2020},
+  doi = {10.1145/3385412.3386032},
+}
+
+@article{concatenation-dual,
+  title = {The dual of concatenation},
+  author = {xdata=alexanderokhotin-author},
+  year = 2005,
+  xdata = {tcs},
+
+  volume = {345},
+  number = {2-3},
+  pages = {425--447},
+
+  keywords = {scanning,automata},
+  file = {./files/concatenation-dual.pdf},
+  doi = {10.1016/j.tcs.2005.07.019},
+}
+
+@article{scott-riglr,
+  doi = {10.1093/comjnl/bxh102},
+  url = {https://doi.org/10.1093%2Fcomjnl%2Fbxh102},
+  year = 2005,
+  month = {jan},
+  publisher = {Oxford University Press ({OUP})},
+  volume = {48},
+  number = {5},
+  pages = {565--587},
+  author = {E. Scott},
+  title = {Generalized Bottom Up Parsers With Reduced Stack Activity},
+  journal = {The Computer Journal},
+  file = {./files/scott-riglr.pdf},
+}
+
+@article{Scott_2004,
+  doi = {10.1007/s00236-004-0137-z},
+  url = {https://doi.org/10.1007%2Fs00236-004-0137-z},
+  year = 2004,
+  month = {may},
+  publisher = {Springer Science and Business Media {LLC}},
+  volume = {40},
+  number = {6-7},
+  pages = {459--489},
+  author = {Elizabeth Scott and Adrian Johnstone},
+  title = {Reducing non-determinism in right nulled {GLR} parsers},
+  journal = {Acta Informatica}
+}
+
+@inproceedings{Might_2011,
+  title = {Parsing with derivatives},
+  url = {https://doi.org/10.1145%2F2034773.2034801},
+  year = 2011,
+  month = {sep},
+  publisher = {{ACM}},
+  author = {Matthew Might and David Darais and Daniel Spiewak},
+  booktitle = {Proceedings of the 16th {ACM} {SIGPLAN} international conference on Functional programming},
+
+  doi = {10.1145/2034773.2034801},
+  file = {./files/parsing-derivatives.pdf},
+}
+
+@article{Leo_1991,
+  doi = {10.1016/0304-3975(91)90180-a},
+  url = {https://doi.org/10.1016%2F0304-3975%2891%2990180-a},
+  year = 1991,
+  month = {may},
+  publisher = {Elsevier {BV}},
+  volume = {82},
+  number = {1},
+  pages = {165--176},
+  author = {Joop M.I.M. Leo},
+  title = {A general context-free parsing algorithm running in linear time on every {LR}(k) grammar without using lookahead},
+  journal = {Theoretical Computer Science},
+  file = {./files/leo-no-lookahead.pdf},
+}
+
+@article{Barash_2014,
+  doi = {10.1016/j.ic.2014.03.003},
+  url = {https://doi.org/10.1016%2Fj.ic.2014.03.003},
+  year = 2014,
+  month = {oct},
+  publisher = {Elsevier {BV}},
+  volume = {237},
+  pages = {268--293},
+  author = {Mikhail Barash and Alexander Okhotin},
+  title = {An extension of context-free grammars with one-sided context specifications},
+  journal = {Information and Computation}
+}
+
+@inproceedings{10.1007/978-3-319-06686-8_24,
+  author = {Rabkin, Max},
+  editor = {Hirsch, Edward A. and Kuznetsov, Sergei O. and Pin, Jean-{\'E}ric and Vereshchagin, Nikolay K.},
+  title = {Recognizing Two-Sided Contexts in Cubic Time},
+  booktitle = {Computer Science - Theory and Applications},
+  year = {2014},
+  publisher = {Springer International Publishing},
+  address = {Cham},
+  pages = {314--324},
+  isbn = {978-3-319-06686-8}
+}
+
+@techreport{parsing-zippers,
+  title={Efficient Parsing with Derivatives and Zippers},
+  author={Edelmann, Romain},
+  year={2021},
+  institution={EPFL},
+  file = {./files/parsing-zippers.pdf},
+}
+
 
 @comment(Unprocessed)
 

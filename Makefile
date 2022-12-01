@@ -2,7 +2,7 @@
 
 all: bibliography.pdf
 
-bibliography.pdf: bibliography.tex bibliography.bib
+bibliography.pdf: bibliography.tex references.bib
 	LANG= latexmk -lualatex -bibtex bibliography.tex
 
 clean:
