@@ -14,7 +14,7 @@ runcolor=Red,
 }
 
 \usepackage[wider]{rmpage}
-\usepackage[style=numeric,sorting=ynt,doi=false,useprefix,maxnames=20]{biblatex}
+\usepackage[style=draft,sorting=ynt,doi=false,useprefix,maxnames=20]{biblatex}
 \addbibresource{references.bib}
 
 \DeclareFieldFormat{date}{\mkbibbold{#1}}
@@ -39,6 +39,7 @@ runcolor=Red,
 \printbibliography[keyword=scanning,title=Scanning]
 \printbibliography[keyword=lookahead,title=Lookahead]
 \printbibliography[keyword=tn,title=Transition networks]
+\printbibliography[keyword=ecfg,title=ECFG]
 \printbibliography[keyword=lr,title=LR]
 \printbibliography[keyword=earley,title=Earley]
 \printbibliography[keyword=automata,title=Automata]
