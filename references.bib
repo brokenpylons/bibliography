@@ -676,16 +676,8 @@
   author = {Lex Augusteijn},
 }
 
-@xdata{franskrusemanaretz,
-  author = {Kruseman Aretz, Frans E.J.},
-}
-
 @xdata{lennartkats,
   author = {Kats, Lennart},
-}
-
-@xdata{eelcovisser,
-  author = {Visser, Eelco},
 }
 
 @xdata{guidowachsmuth,
@@ -698,6 +690,34 @@
 
 @xdata{igordejanovic,
   author = {Igor Dejanovi\'{c}},
+}
+
+@xdata{nicolasnicolov,
+  author = {Nicolas Nicolov},
+}
+
+@xdata{ruslanmitkov,
+  author = {Ruslan Mitkov},
+}
+  
+@xdata{lolaburgueno,
+  author = {Lola Burgue\~{n}o},
+}
+
+@xdata{waltercazzola,
+  author = {Walter Cazzola},
+}
+  
+@xdata{martinrinard,
+  author = {Martin Rinard},
+}
+
+@xdata{kevinsullivan,
+  author = {Sullivan, Kevin J.}
+}
+
+@xdata{danielsteinberg,
+  author = {Steinberg, Daniel H.}
 }
 
 @comment(Publishers)
@@ -759,7 +779,12 @@
 
 @xdata{ots,
   publisher = {OTS},
-  location = {Utrecht,  Netherlands},
+  location = {Utrecht, Netherlands},
+}
+
+@xdata{johnbenjamins,
+  publisher = {John Benjamins Publishing Company},
+  location = {Amsterdam, Netherlands}
 }
 
 @comment(Journals)
@@ -1110,7 +1135,7 @@
   title = {Language and Automata Theory and Applications},
   eventtitle = {LATA~2009},
   eventdate = {2009},
-  editor = {xdata=adriandediu-author and xdata=armandionescu-author and carlosmartinvide-author},
+  editor = {xdata=adriandediu-author and xdata=armandionescu-author and xdata=carlosmartinvide-author},
   date = {2009},
   venue = {Tarragona, Spain},
   xdata = {springer-berlin},
@@ -1155,6 +1180,7 @@
 
 @proceedings{sle2022,
   title = {International Conference on Software Language Engineering},
+  editor = {xdata=lolaburgueno-author and xdata=waltercazzola-author},
   eventtitle = {SLE~2022},
   eventdate = {2022},
   date = {2022},
@@ -1165,11 +1191,22 @@
 
 @proceedings{oopsla2010,
   title = {Conference on Object-Oriented Programming Systems, Languages, and Applications},
+  editor = {xdata=martinrinard-author and xdata=kevinsullivan-author and xdata=danielsteinberg-author},
   eventtitle = {OOPSLA~2010},
   eventdate = {2010},
   date = {2010},
   venue = {Reno/Tahoe, NV, USA},
   xdata = {acm-ny},
+}
+
+@proceedings{ranlp1997,
+  title = {Recent Advances in Natural Language Processing},
+  editor = {xdata=nicolasnicolov-author and xdata=ruslanmitkov-author},
+  eventtitle = {RANLP~1997},
+  eventdate = {1997},
+  date = {1997},
+  venue = {Tzigov Chark, Bulgaria},
+  xdata = {johnbenjamins},
 }
 
 @comment(Papers)
@@ -1598,7 +1635,7 @@
 }
 
 @incollection{farshi-epsilon,
-  title = {{GLR} Parsing for $\varepsilon$-Grammers},
+  title = {{GLR} Parsing for $\varepsilon$-Grammars},
   author = {xdata=rahmanfarshi-author},
   pages = {61--75},
   crossref = {glr-collection},
@@ -2023,10 +2060,10 @@
   doi = {10.1109/SCCC.1998.730784},
 }
 
-@unpublished{parsing-dynamic-earley-glr-derivation,
+@inproceedings{parsing-dynamic-earley-glr-derivation,
   title = {A New Approach to the Construction of Generalized {LR} Parsing Algorithms},
   author = {xdata=miguelalonsopardo-author and xdata=davidcabrerosouto-author and xdata=manuelvilaresferro-author},
-  date = {1997},
+  crossref = {ranlp1997},
 
   keywords = {parsing,dynamic},
   file = {./files/parsing-dynamic-earley-glr-derivation.pdf},
@@ -2146,7 +2183,7 @@
 
 @article{ecfg-lr2,
   title = {Fast deterministic parsers for transition networks},
-  author = {xdata=angeloborsotti-author and xdata=lucabreveglieri-author and xdata=stefanocrespireghizzi and xdata=angelomorzenti},
+  author = {xdata=angeloborsotti-author and xdata=lucabreveglieri-author and xdata=stefanocrespireghizzi-author and xdata=angelomorzenti-author},
   date = {2017},
   xdata = {ai},
 
@@ -2630,7 +2667,7 @@
 
 @article{leermakers-functional-lr,
   title = {A functional {LR} parser},
-  author = {xdata=reneleermakers-author and xdata=lexaugusteijn-author and xdata=franskrusemanaretz},
+  author = {xdata=reneleermakers-author and xdata=lexaugusteijn-author and xdata=franskrusemanaretz-author},
   xdata = {tcs},
   date = {1992},
 
@@ -2645,7 +2682,7 @@
 
 @inproceedings{kats-declarative,
   title = {Pure and declarative syntax definition: Paradise lost and regained},
-  author = {xdata=lennartkats-author and xdata=eelcovisser-author and xdata=guidowachsmuth-autor},
+  author = {xdata=lennartkats-author and xdata=eelcovisser-author and xdata=guidowachsmuth-author},
   crossref = {oopsla2010},
 
   pages = {918--932},
@@ -2687,7 +2724,7 @@
 @article{parglare,
   title = {Parglare: A {LR/GLR} parser for Python},
   author = {xdata=igordejanovic-author},
-  journal = {scp},
+  xdata = {scp},
   date = {2022},
 
   volume = {214},
