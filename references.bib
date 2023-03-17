@@ -720,6 +720,14 @@
   author = {Steinberg, Daniel H.}
 }
 
+@xdata{ronaldomenezes,
+  author = {Ronaldo Menezes},
+}
+
+@xdata{mirkoviroli,
+  author = {Mirko Viroli},
+}
+
 @comment(Publishers)
 
 @xdata{springer-ny,
@@ -1209,6 +1217,16 @@
   xdata = {johnbenjamins},
 }
 
+@proceedings{sac2008,
+  title = {Symposium on Applied computing},
+  editor = {xdata=ronaldomenezes-author and xdata=mirkoviroli-author},
+  eventtitle = {SAC~2008},
+  eventdate = {2008},
+  date = {2008},
+  venue = {Fortaleza, Ceara Brazil},
+  xdata = {acm-ny},
+}
+
 @comment(Papers)
 
 @article{pager-minimal,
@@ -1647,7 +1665,7 @@
   title = {Parser generation for interactive environments},
   author = {xdata=janrekers-author},
   date = {1992},
-  institution = {Universty of Amsterdam},
+  institution = {University of Amsterdam},
   location = {Amsterdam, Netherlands},
 
   keywords = {parsing},
@@ -1887,13 +1905,14 @@
 }
 
 @inproceedings{ielr-short,
+  title = {{IELR}(1): Practical {LR}(1) Parser Tables for Non-{LR}(1) Grammars with Conflict Resolution},
+  author = {xdata=joeldenny-author and xdata=brianmalloy-author},
+  date = {2008},
+  crossref = {sac2008},
+
+  pages = {240-–245},
+
   doi = {10.1145/1363686.1363747},
-  url = {https://doi.org/10.1145%2F1363686.1363747},
-  year = 2008,
-  publisher = {{ACM} Press},
-  author = {Joel E. Denny and Brian A. Malloy},
-  title = {{IELR}(1)},
-  booktitle = {Proceedings of the 2008 {ACM} symposium on Applied computing  - {SAC} {\textquotesingle}08},
   file = {./files/ielr-short.pdf},
 }
 
@@ -2394,7 +2413,7 @@
   month = aug,
   year = {1989},
   address = {Pittsburgh, Pennsylvania, USA},
-  publisher = {Carnegy Mellon University},
+  publisher = {Carnegie Mellon University},
 
   pages = {28--42},
 

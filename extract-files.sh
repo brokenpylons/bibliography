@@ -11,9 +11,16 @@ done)
 
 readarray -d '\n' actual < <(find ./files/*)
 
-case ${1:?Option missing} in
-referenced)
+referenced() {
     comm -1 -2 <(sort -u <<<"${extracted[@]}") <(sort -u <<<"${actual[@]}")
+}
+
+case ${1:?Option missing} in
+zip)
+    zip bibliography.zip $(referenced)
+    ;;
+referenced)
+    referenced
     ;;
 unprocessed)
     comm -1 -3  <(sort -u <<<"${extracted[@]}") <(sort -u <<<"${actual[@]}")
