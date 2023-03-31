@@ -736,6 +736,18 @@
   author = {Schabes, Yves},
 }
 
+@xdata{toddmillstein,
+  author = {Todd Millstein},
+}
+
+@xdata{samharwell,
+  author = {Harwell, Sam},
+}
+
+@xdata{kathleenfisher,
+  author = {Fisher, Kathleen},
+}
+
 @comment(INSERT)
 
 @comment(Publishers)
@@ -1218,6 +1230,16 @@
   eventdate = {2010},
   date = {2010},
   venue = {Reno/Tahoe, NV, USA},
+  xdata = {acm-ny},
+}
+
+@proceedings{oopsla2014,
+  title = {Conference on Object-Oriented Programming Systems, Languages, and Applications},
+  editor = {xdata=toddmillstein-author},
+  eventtitle = {OOPSLA~2014},
+  eventdate = {2014},
+  date = {2014},
+  venue = {Portland, OR, USA},
   xdata = {acm-ny},
 }
 
@@ -2786,9 +2808,34 @@
 
   pages = {106--113},
 
-  keywords = {scanning, earley},
+  keywords = {parsing, scanning, earley},
   doi = {10.3115/981344.981358},
   file = {./files/polynomial-time-cfg.pdf},
+}
+
+@article{gll,
+  title = {{GLL} Parsing},
+  author = {xdata=elizabethscott-author and xdata=adrianjohnstone-author},
+  date = {2010},
+  xdata = {entcs},
+
+  volume = {253},
+  number = {7},
+  pages = {177--189},
+
+  keywords = {parsing},
+  file = {./files/gll.pdf},
+  doi = {10.1016/j.entcs.2010.08.041},
+}
+
+@inproceedings{all,
+  title = {Adaptive LL(*) Parsing: The Power of Dynamic Analysis},
+  author = {xdata=terenceparr-author and xdata=samharwell-author and xdata=kathleenfisher-author},
+  crossref = {oopsla2014},
+
+  pages = {579--598},
+  keywords = {parsing},
+  doi = {10.1145/2660193.2660202},
 }
 
 @comment(Unprocessed)
