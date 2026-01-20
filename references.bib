@@ -1092,6 +1092,38 @@
   author = {Wilensky, Uri},
 }
 
+@xdata{romanredziejowski,
+  author = {Roman R. Redziejowski},
+}
+
+@xdata{mikioaoyama,
+  author = {Mikio Aoyama},
+}
+
+@xdata{katsuroinoue,
+  author = {Katsuro Inoue},
+}
+
+@xdata{vaclavrajlich,
+  author = {Vaclav Rajlich},
+}
+
+@xdata{irabaxter,
+  author = {Baxter, Ira D.},
+}
+
+@xdata{henriknilsson,
+  author = {Henrik Nilsson},
+}
+
+@xdata{markusforsberg,
+  author = {Forsberg, Markus},
+}
+
+@xdata{aarneranta,
+  author = {Ranta, Aarne},
+}
+
 @comment(INSERT)
 
 @comment(Publishers)
@@ -1315,6 +1347,10 @@
 
 @xdata{ijcci,
   journaltitle = {International Journal of Child-Computer Interaction},
+}
+
+@xdata{funi,
+  journaltitle = {Fundamenta Informaticae},
 }
 
 @comment(Conferences)
@@ -1763,6 +1799,26 @@
   eventdate = {2015},
   date = {2015},
   venue = {Skiathos Island, Greece},
+}
+
+@proceedings{iwpse2002,
+  title = {Proceedings of the International Workshop on Principles of Software Evolution},
+  editors = {xdata=mikioaoyama-author and xdata=katsuroinoue-author and xdata=vaclavrajlich-author},
+  eventtitle = {IWPSE~2002},
+  eventdate = {2002},
+  date = {2002},
+  venue = {Orlando, FL, USA},
+  xdata = {acm-ny},
+}
+
+@proceedings{haskell2004,
+  title = {ACM SIGPLAN Workshop on Haskell},
+  editors = {xdata=henriknilsson-author},
+  eventtitle = {Haskell~2004},
+  eventdate = {2004},
+  date = {2004},
+  venue = {Snowbird, UT, USA},
+  xdata = {acm-ny},
 }
 
 @comment(Papers)
@@ -3650,6 +3706,65 @@
   howpublished = {https://developers.google.com/blockly (visited on 2025-10-27)},
 }
 
+@article{prefix-disjoint,
+  title = {From {EBNF} to {PEG}},
+  author = {xdata=romanredziejowski-author},
+  date = {2013},
+  xdata = {funi},
+
+  volume = {128},
+  number = {1-2},
+  pages = {177--191},
+}
+
+@inproceedings{extendedre,
+  title = {DMS: program transformations for practical scalable software evolution},
+  author = {xdata=irabaxter-author},
+  crossref = {iwpse2002},
+
+  pages = {48--51},
+
+  doi = {10.1145/512035.512047},
+}
+
+@inproceedings{lbnf,
+  title = {BNF converter},
+  author = {xdata=markusforsberg-author and xdata=aarneranta-author},
+  crossref = {haskell2004},
+
+  pages = {94–-95},
+
+  doi = {10.1145/1017472.1017475},
+}
+
+@article{grammarzoo,
+  title = {Grammar Zoo: A corpus of experimental grammarware},
+  author = {Vadim Zaytsev},
+  date = 2015,
+  xdata = {scp},
+
+  volume = 98,
+  pages = {28--51},
+}
+
+@misc{cpu,
+  author = {Rafael J. Wysocki},
+  title = {intel\_pstate CPU Performance Scaling Driver},
+  howpublished = {https://www.kernel.org/doc/html/v4.19/admin-guide/pm/intel\_pstate.html (visited on 2025-10-07)},
+}
+
+@misc{jsonwebsite,
+  author = {Douglas Crockford},
+  title = {{JSON}},
+  howpublished = {https://www.json.org/json-en.html (visited on 2025-10-07)},
+}
+
+@book{pascalspec,
+  title = {Pascal ISO 7185:1990},
+  author = {{ISO} Pascal working group},
+  year = {1991}
+}
+
 @comment(Unprocessed)
 
 @article{learnableprogramming,
@@ -3677,67 +3792,6 @@
     series       = {ACL '98/EACL '98}
 }
 
-@article{prefix-disjoint,
-    author        = {Roman R. Redziejowski},
-    volume        = 128,
-    number        = {1-2},
-    pages         = {177--191},
-    title         = {From {EBNF} to {PEG}},
-    journal       = {Fundamenta Informaticae},
-    year          = 2013,
-    publisher     = {{IOS} Press}
-}
-
-
-@inproceedings{extendedre,
-    author         = {I. D. Baxter and C. Pidgeon and M. Mehlich},
-    editor         = {Frances Titsworth},
-    booktitle      = {Proceedings of the 26th International Conference on Software Engineering}, 
-    title          = {DMS: program transformations for practical scalable software evolution}, 
-    year           = 2004,
-    pages          = {625-634},
-    organization   = {IEEE/ACM},
-    publisher      = {IEEE}
-}
-
-@inproceedings{lbnf,
-    author       = {Markus Forsberg and Aarne Ranta},
-    editor       = {Henrik Nilsson},
-    title        = {BNF converter},
-    booktitle    = {Proceedings of the 2004 ACM SIGPLAN workshop on Haskell},
-    organization = {ACM SIGPLAN},
-    publisher    = {ACM},
-    pages        = {94--95},
-    year         = {2004}
-}
-
-@article{grammarzoo,
-    author       = {Vadim Zaytsev},
-    title        = {Grammar Zoo: A corpus of experimental grammarware},
-    journal      = {Science of Computer Programming},
-    volume       = 98,
-    pages        = {28--51},
-    year         = 2015,
-    publisher    = {Elsevier}
-}
-
-@misc{cpu,
-    author       = {Rafael J. Wysocki},
-    title        = {intel\_pstate CPU Performance Scaling Driver},
-    howpublished = {https://www.kernel.org/doc/html/v4.19/admin-guide/pm/intel\_pstate.html (visited on 2025-10-07)}
-}
-
-@misc{jsonwebsite,
-    author       = {Douglas Crockford},
-    title        = {JSON},
-    howpublished = {https://www.json.org/json-en.html (visited on 2025-10-07)}
-}
-
-@book{pascalspec,
-    title={Pascal ISO 7185:1990},
-    author={{ISO Pascal working group}},
-    year={1991}
-}
 
 @article{morbig,
     title = {Morbig: A Static parser for POSIX shell},
@@ -3822,16 +3876,6 @@
     journal={Technical Report Series TUD-SERG-2007-018},
     year={2007},
     publisher={Citeseer}
-}
-
-
-@article{unicode,
-  title={The unicode standard},
-  author={Allen, Julie D and Anderson, Deborah and Becker, Joe and Cook, Richard and Davis, Mark and Edberg, Peter and Everson, Michael and Freytag, Asmus and Iancu, Laurentiu and Ishida, Richard and others},
-  journal={Mountain view, CA},
-  pages={660--664},
-  year={2012},
-  publisher={Citeseer}
 }
 
 @unpublished{reviewer,
